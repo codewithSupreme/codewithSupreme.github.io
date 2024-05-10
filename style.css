@@ -1,9 +1,17 @@
 body{
-    background-color: red;
+    background-color: beige;
+}
+
+p{
+    color: purple;
+}
+
+ul{
+    color: teal;
 }
 
 h1{
-    color: white;
+    color: coral;
 }
 
 table,th ,td{

@@ -18,5 +18,12 @@ table,th ,td{
     border: 2px dashed black;
 }
 
+img{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
 
 

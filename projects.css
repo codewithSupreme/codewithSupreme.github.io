@@ -13,6 +13,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
@@ -23,10 +24,12 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -34,11 +37,18 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 #projects {
     text-align: center;
     padding: 50px 20px;
+    background-color: #f4f4f9;
 }
 
 h2 {
@@ -71,3 +81,22 @@ ul li strong {
     margin-bottom: 5px;
     font-size: 1.1em;
 }
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
